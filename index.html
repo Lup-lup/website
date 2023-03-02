@@ -6,7 +6,7 @@
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title>Artcraft Website</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-
+    </head>
     </head>
     <body>
         <div id="header">
@@ -14,11 +14,10 @@
                 <nav>
                     <img src="images/logo.jpeg" class="logo" alt="">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Project Showcase</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#showcase">Project Showcase</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                     <a href="#" class="btn">Book Today</a>
                 </nav>
@@ -37,7 +36,7 @@
         </div>
 
         <!----Service Section---->
-        <section class="services"></section>
+        <div id="services"></div>
         <div class="title">
             <h2>Our Services</h2>
         </div>
@@ -65,20 +64,51 @@
             </div>
         </div>
 
+        <!---Project Showcase---->
+        <div id="showcase"></div>
+        <div class="title">
+            <h2>Project Showcase</h2>
+        </div>
+        <!----Carousel---->
+        <div class="projects">
+            <div class="carousel">
+                <figure class="slider">
+                    <img src="images/6.jpeg" alt="">
+                    <img src="images/2.jpeg" alt="">
+                    <img src="images/3.jpeg" alt="">
+                    <img src="images/4.jpeg" alt="">
+                    <img src="images/5.jpeg" alt="">
+                </figure>
+            </div>
+          
+            <img src="images/left arrow.png" alt="prev" id="prev">
+            <img src="images/right arrow.png" alt="next" id="next">
+        </div>
+
          <!----Contact Us---->
-         <section class="contact"></section>
-         <div class="title">
-            <h2>Contact Us</h2>
+         <div id="contact"></div>
+            <div class="title">
+                <h2>Contact Us</h2>
+            </div>
             <div class="box">
-                <div class="card2">
-                    <h3>Our Shop</h3>
-                    <p>Shop3 182-186 Whitehorse Road Balwyn VIC 3103 (opposite balwyn cinema)</p>
-                </div>
-                <div class="card2">
-                    <h3>Call Today</h3>
-                    <p>0426 268 170</p>
+                <div class="row">
+                    <div class="contact-left">
+                        <p><i class="fa-solid fa-location-dot"></i>Shop3, 182-186 Whitehorse Road Balwyn VIC 3103</p>
+                        <P><i class="fa-solid fa-phone"></i>0426 268 170</p>
+                    </div>
+                    <div class="contact-right">
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Shop3%20182-186%20Whitehorse%20Road%20Balwyn%20VIC%203103&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">divi discount</a><br>
+                                <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+
+        <script src="https://kit.fontawesome.com/3b8b5e9b74.js" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
     </body>
 </html>
